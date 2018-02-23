@@ -17,7 +17,7 @@ public class Main {
 	
     public static void main(String[] args) throws Exception {
 
-        String filename = "EventLogs\\sample.xes";
+        String filename = "EventLogs/sample.xes";
 
     	logManager.readConfiguration(new FileInputStream("./app.properties"));
     	logger.info("started application");

@@ -8,6 +8,10 @@ buildscript {
 
 plugins { id 'com.rapidminer.extension' version '0.8.2' }
 
+codeQuality {
+    checkstyle = false
+}
+
 // Define Maven artifact repositories
 repositories {
     jcenter()
@@ -62,6 +66,8 @@ extensionConfig {
      */
     homepage = "www.rapidprom.org"
 
+	wrapperVersion = '3.3'
+
 	// enable shadowJar before rapidminer dependency (otherwise build fails)
     shadowJar {
     	zip64 true
@@ -72,7 +78,12 @@ extensionConfig {
         rapidminer '7.2.0'
         //extension namespace: 'text', version: '7.2.0'
     }
+    
+    sourceCompatibility = 1.8
+    
+    targetCompatibility = 1.8
 }
+
 
 // Define third party library dependencies
 dependencies {
