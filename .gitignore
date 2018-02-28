@@ -13,3 +13,5 @@ config/pmd/ruleset.xml
 *.iml
 .checkstyle
 .pmd
+Output
+Logs
